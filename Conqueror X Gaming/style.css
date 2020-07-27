@@ -1,0 +1,252 @@
+ 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+}
+ .ileft{
+    box-shadow: -10px 10px 15px rgba(0,0,0,.3);
+}
+.iright{
+    box-shadow: 10px 10px 15px rgba(0,0,0,.3);
+}
+    .nv{
+            margin-left: 150px;
+        }
+        .modal{
+            text-align: center;
+        }
+        .logo{
+            width: 50px;
+            border-radius: 40%;
+        }
+
+        .carousel-inner{
+            padding: 10px 100px;
+            width: 100%;
+        }
+        .carousel-item img{
+            height: 100vh;
+            width: 500px;
+        }
+        button a{
+            color: #000;
+        }
+        button a:hover{
+            text-decoration: none;
+            text-decoration-color: none;
+        }
+        .social .fa{
+            font-size: 20px;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+        @media(max-width: 1025px){
+        .carousel-inner{
+            padding: 10px 50px;
+        }
+        .carousel-item img{
+            height: auto;
+        }
+ 
+        }
+
+/*SVG ICONS*/
+ #svg{
+          padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #06181f;
+}
+.con{
+    position: relative;
+    width: 500px;margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con .icon{
+    width: 200px;
+}
+.con .icon path{
+    fill: transparent;
+    stroke-width: 10;
+    stroke: #31e8ff;
+}
+.con .icon.facebook path{
+    stroke-dasharray: 1630;
+    stroke-dashoffset: 0;
+}
+.con .icon.facebook:hover path{
+    animation: animate-facebook 1.5s linear forwards;
+}
+@keyframes animate-facebook{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1630;
+    }
+    80%{
+        stroke-dashoffset: 3260;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 3260;
+        fill: #31e8ff;
+    }
+}
+.con .icon.instagram path{
+    stroke-dasharray: 1810;
+    stroke-dashoffset: 0;
+}
+.con .icon.instagram:hover path{
+    animation: animate-instagram 1.5s linear forwards;
+}
+@keyframes animate-instagram{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1810;
+    }
+    80%{
+        stroke-dashoffset: 3620;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 3620;
+        fill: #31e8ff;
+    }
+}
+.con .icon.youtube path{
+    stroke-dasharray: 2160;
+    stroke-dashoffset: 0;
+}
+.con .icon.youtube:hover path{
+    animation: animate-youtube 1.5s linear forwards;
+}
+@keyframes animate-youtube{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 2160;
+    }
+    80%{
+        stroke-dashoffset: 4320;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 4320;
+        fill: #31e8ff;
+    }
+}
+.con .icon.whatsapp path{
+    stroke-dasharray: 2165;
+    stroke-dashoffset: 0;
+}
+.con .icon.whatsapp:hover path{
+    animation: animate-whatsapp 1.5s linear forwards;
+}
+@keyframes animate-whatsapp{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 2165;
+    }
+    80%{
+        stroke-dashoffset: 4330;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 4330;
+        fill: #31e8ff;
+    }
+}
+@media(max-width:1025px){
+ 
+.con{
+    position: relative;
+    width: 150px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con .icon{
+    width: 100px;
+}
+}
+/*Face*/
+   .face{
+        margin-bottom: 10vh;
+        margin-top: 10vh;
+    }
+        .fun{
+             display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #06181f;
+        }
+
+.face{
+    margin-bottom: 10vh;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #ffcd00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.face::before{
+    content: '';
+    position: absolute;
+    top: 180px;
+    width: 150px;
+    height: 70px;
+    background: #b57700;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.5s;    
+}
+.face:hover::before{
+    top: 210px;
+    width: 150px;
+    height: 20px;
+    background: #b57700;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.eyes{
+    position: relative;
+    top: -40px;
+    display: flex;
+}
+.eyes .eye{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: block;
+    background: #fff;
+    margin: 0 15px;
+    border-radius: 50%;
+}
+.eyes .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: #333;
+    border-radius: 50%;
+}
+
+        
